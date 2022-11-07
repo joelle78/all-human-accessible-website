@@ -281,9 +281,9 @@ h2 {
   opacity: 1;
 }
 
-@media(min-width: 576px){
+@media(min-width: 520px){
   .form-container{
-    max-width: 540px;
+    max-width: 490px;
   }
 }
 
