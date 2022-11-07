@@ -204,6 +204,7 @@ h2 {
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=text] {
   width: 100%;
+  height: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -212,6 +213,7 @@ h2 {
 
 .form-container input[type=date], .form-container input[type=date] {
   width: 100%;
+  height: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -220,6 +222,7 @@ h2 {
 
 .form-container input[type=tel], .form-container input[type=tel] {
   width: 100%;
+  height: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -228,6 +231,7 @@ h2 {
 
 .form-container input[type=email], .form-container input[type=email] {
   width: 100%;
+  height: 20%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -276,6 +280,25 @@ h2 {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+@media(min-width: 476px){
+  .form-container{
+    max-width: 440px;
+  }
+}
+
+@media(min-width: 368px){
+  .container{
+    max-width: 320px
+  }
+}
+
+/* @media screen and (max-width: 20px) {
+  .form-popup, .form-container, .btn, input[type=text], input[type=date], input[type=tel], input[type=email] {
+    width: 100%;
+    margin-top: 0;
+  }
+} */
 
 /* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
@@ -667,9 +690,4 @@ h5 {
 /* Add some hover effects to buttons */
 .form-container3 .btn3:hover, .open-button3:hover {
   opacity: 1;
-}
-
-
-@media screen and (min-width: 1020px) .wrapper{
-
 }
