@@ -9,7 +9,7 @@ body {
   color: #fff;
 }
 
-/* Navigation bar */
+/* --------------------- NAV BAR ---------------------- */
 .navbContainer {
   padding: 1% 10%;
 }
@@ -38,7 +38,7 @@ body {
   font-weight: 100;
 }
 
-/* Section 1 */
+/* --------------------- SECTION 1, KIJK LIVE MEE ---------------------- */
 #live {
   background-color: #EEF2E6;
 }
@@ -78,7 +78,7 @@ h2 {
   text-align: center;
 }
 
-/* CAROUSEL */
+/* --------------------- CAROUSEL, HOE WERKT HET ---------------------- */
 .carouselContainer {
   background-color: #EEF2E6;
   width: 60%;
@@ -167,7 +167,8 @@ h2 {
   float: right;
 }
 
-/* Form */
+/* --------------------- FORM, RESERVEER EEN STEKJE ---------------------- */
+
 /* Button used to open the contact form*/
 .open-button {
   background-color: #ef672e;
@@ -276,7 +277,7 @@ h2 {
   opacity: 1;
 }
 
-/* Section 3 */
+/* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
   background-color: #EEF2E6;
 }
@@ -334,7 +335,8 @@ h5 {
   padding: 8% 0 0 3%;
 }
 
-/* Card flip */
+/* --------------------- CARD FLIP, PIJLERS ---------------------- */
+
 /* The flip card container  */
 .flip-card {
   background-color: transparent;
@@ -394,7 +396,9 @@ h5 {
   width: 60rem;
 }
 
-/* Workshops page */
+/* --------------------- WORKSHOP PAGE ---------------------- */
+
+
 /* Agenda content */
 #agendaContent {
   background-color: #EEF2E6;
@@ -470,7 +474,7 @@ h5 {
   background: white;
 }
 
-/* FILTER BUTTON FORM */
+/* --------------------- FORM, FILTER ---------------------- */
 
 /* Button used to open the contact form*/
 .open-button2 {
@@ -552,7 +556,7 @@ h5 {
   opacity: 1;
 }
 
-/* REGISTER BUTTON FORM */
+/* --------------------- FORM, MELD JE AAN ---------------------- */
 
 /* Button used to open the contact form*/
 .open-button3 {
