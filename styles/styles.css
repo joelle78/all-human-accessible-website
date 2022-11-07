@@ -293,13 +293,6 @@ h2 {
   }
 }
 
-/* @media screen and (max-width: 20px) {
-  .form-popup, .form-container, .btn, input[type=text], input[type=date], input[type=tel], input[type=email] {
-    width: 100%;
-    margin-top: 0;
-  }
-} */
-
 /* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
   background-color: #EEF2E6;
@@ -313,6 +306,7 @@ h2 {
 .heartbeatImage {
   width: 12em;
   padding-top: 10%;
+
 }
 
 .planetEarthImage {
@@ -418,6 +412,32 @@ h5 {
 .footerImage2 {
   width: 60rem;
 }
+
+@media screen and (max-width: 767px) {
+  .flip-card-front {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .flip-card-back {
+    height: 285px;
+  }
+  .flip-card-front{
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card-front {
+    width: 94.5%;
+  }
+  .flip-card-back {
+    height: 260px;
+  }
+}
+
+
+
 
 /* --------------------- WORKSHOP PAGE ---------------------- */
 
