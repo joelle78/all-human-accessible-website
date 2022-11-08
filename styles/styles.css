@@ -38,7 +38,6 @@ header{
   font-weight: 100;
 }
 
-
 /* --------------------- genneral --------------------- */
 
 main {
@@ -92,7 +91,6 @@ h5 {
   margin-top: 5%;
 }
 
-
 /* Section 2 */
 .howDoesItWorks {
   background-color: #158467;
@@ -102,8 +100,6 @@ h5 {
 .howContainer {
   padding: 5% 0.5% 5% 0;
 }
-
-
 
 /* --------------------- CAROUSEL, HOE WERKT HET ---------------------- */
 .carouselContainer {
@@ -447,7 +443,6 @@ h5 {
 }
 
 /* --------------------- WORKSHOP PAGE ---------------------- */
-
 /* Agenda content */
 #agendaContent {
   background-color: #EEF2E6;
@@ -556,7 +551,6 @@ main>div {
 /* Button used to open the contact form*/
 .open-button2 {
   /* width: 80%; */
-
   background-color: #ef672e;
   color: white;
   padding: 16px 20px;
@@ -600,6 +594,7 @@ main>div {
   background: #f1f1f1; 
 }
 */
+
 
 /* When the inputs get focus, do something */
 .form-container2 input[type=text]:focus, .form-container2 input[type=text]:focus {
