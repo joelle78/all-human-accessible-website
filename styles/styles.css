@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
 }
 
-#title {
+header{
   background-color: #158467;
   color: #fff;
 }
@@ -38,8 +38,45 @@ body {
   font-weight: 100;
 }
 
+/* --------------------- genneral --------------------- */
+
+main {
+  grid-area: main;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c2e65;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #2c2e65;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-top: 5%;
+  color: #2c2e65;
+}
+
+h5 {
+  font-size: .5rem;
+  padding-top: 5%;
+  color: #2c2e65;
+}
+
 /* --------------------- SECTION 1, KIJK LIVE MEE ---------------------- */
-#live {
+.live {
   background-color: #EEF2E6;
 }
 
@@ -54,28 +91,14 @@ body {
   margin-top: 5%;
 }
 
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #2c2e65;
-  font-weight: 800;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
 /* Section 2 */
-#howDoesItWorks {
+.howDoesItWorks {
   background-color: #158467;
   padding-bottom: 10%;
 }
 
 .howContainer {
   padding: 5% 0.5% 5% 0;
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: white;
-  text-align: center;
 }
 
 /* --------------------- CAROUSEL, HOE WERKT HET ---------------------- */
@@ -287,14 +310,15 @@ h2 {
   }
 }
 
-@media(min-width: 368px){
-  .container{
+/* @media(min-width: 368px){
+  /* container is a researved Bootstrap class name */
+  /* .container{
     max-width: 320px
   }
-}
+} */
 
 /* --------------------- SECTION 3, VISIE ---------------------- */
-#vision {
+.vision {
   background-color: #EEF2E6;
 }
 
@@ -317,24 +341,6 @@ h2 {
 .supportImage {
   width: 12em;
   padding-top: 10%;
-}
-
-h3 {
-  font-size: 1.5rem;
-  padding-top: 5%;
-  color: #2c2e65;
-}
-
-h4 {
-  font-size: 1.5rem;
-  padding-top: 5%;
-  color: #2c2e65;
-}
-
-h5 {
-  font-size: 1.5rem;
-  padding-top: 5%;
-  color: #2c2e65;
 }
 
 .parVitaliteit {
@@ -436,19 +442,14 @@ h5 {
   }
 }
 
-
-
-
 /* --------------------- WORKSHOP PAGE ---------------------- */
-
-
 /* Agenda content */
 #agendaContent {
   background-color: #EEF2E6;
 }
 
 /* > = all the directive divs in the wrapper */
-.wrapper>div {
+main>div {
   padding: 1em;
 }
 
@@ -457,16 +458,42 @@ h5 {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 1em;
-  justify-items: stretch;
+  /* justify-items: stretch; */
+  grid-template-areas:
+  "filter main main main";
+}
+
+@media(max-width: 520px) {
+  .wrapper {
+    grid-template-areas:
+      "filter filter filter"
+      "main main main";
+  }
 }
 
 .header {
   grid-column: 1/3;
 }
 
-.filter {
-  grid-column: 0/3;
-  grid-row: 3/3;
+/* .filter { */
+  /* grid-column: 0/3; */
+  /* grid-row: 3/3; */
+
+  /* parrent of the filter button*/
+  /* position: fixed; */
+/* } */
+
+.FilterContainer {
+  padding-top: 1rem;
+  grid-area: filter;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.FilterContainer .open-button2 {
+  width: 100%;
 }
 
 /* .containerFilter{
@@ -486,7 +513,7 @@ h5 {
 }
 
 .workshopImage {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -495,7 +522,6 @@ h5 {
 }
 
 .h1Workshops {
-  font-size: 3vw;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -506,6 +532,8 @@ h5 {
 }
 
 .h3Workshops {
+  width: 100%;
+  display: block;
   font-size: 2.5vw;
 }
 
@@ -514,6 +542,7 @@ h5 {
 }
 
 .containerContent {
+  padding: 2rem;
   background: white;
 }
 
@@ -521,26 +550,21 @@ h5 {
 
 /* Button used to open the contact form*/
 .open-button2 {
+  /* width: 80%; */
   background-color: #ef672e;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   /* position: fixed; */
-  position: absolute;
-  bottom: 313px;
-  left: 35px;
-  width: 327px;
+  /* bottom: 20px; */
   z-index: 9;
+  position: relative;
 }
 
 /* The popup form - hidden by default */
 .form-popup2 {
   display: none;
-  position: absolute;
-  top: 550px;
-  left: 35px;
-
   z-index: 9;
 }
 
@@ -562,13 +586,15 @@ h5 {
   background: #f1f1f1;
 }
 
-.form-container2 input[type=checkbox], .form-container2 input[type=checkbox] {
-  /* width: 100%;
+/* .form-container2 input[type=checkbox], .form-container2 input[type=checkbox] {
+  width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1; */
+  background: #f1f1f1; 
 }
+*/
+
 
 /* When the inputs get focus, do something */
 .form-container2 input[type=text]:focus, .form-container2 input[type=text]:focus {
@@ -576,10 +602,10 @@ h5 {
   outline: none;
 }
 
-.form-container2 input[type=checkbox]:focus, .form-container2 input[type=checkbox]:focus {
-  /* background-color: #ddd;
-  outline: none; */
-}
+  /*.form-container2 input[type=checkbox]:focus, .form-container2 input[type=checkbox]:focus {
+ background-color: #ddd;
+  outline: none;
+} */
 
 .searchTitel{
   padding-top: 0.8em;
@@ -608,10 +634,6 @@ h5 {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 853px;
-  right: 670px;
-  width: 150px;
   border-radius: 1em;
   z-index: 9;
 }
