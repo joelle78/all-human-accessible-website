@@ -696,26 +696,68 @@ h5 {
 
 /* --------------------- CONTACT PAGE ---------------------- */
 
+.header-contact-page {
+  text-align: left;
+  padding-top: 1.5em;;
+  padding-left: 1em;
+}
+
 .body-contact{
   background-color: #EEF2E6;
 }
 
-.location-header{
-    grid-column: 1/3;
-}
-
 .wrapper-contact{
   display: grid;
-  grid-column: 2/3;
-  grid-template-columns: 4fr 3fr;
+  grid-template-columns: 1.5fr 1fr;
+  grid-row-gap: 1em;;
+  grid-column-gap: 1em;
+}
+
+.location-header{
+  justify-content: flex-start;
+    grid-column: 1/3;
 
 }
 
-.wrapper-contact > div{
+.google-maps-location{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-right: 1em;
+
+
+}
+
+.responsive-google-maps{
+  /* text-align: center; */
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%
+}
+
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 2.4em;
+}
+
+.google-maps-location > ul{
+  list-style-type: none;
+
+}
+
+/* .wrapper-contact > div{
   background: #eee;
   padding:1em;
 }
 
 .wrapper-contact > div:nth-child(odd){
   background: #ddd;
-}
+} */
